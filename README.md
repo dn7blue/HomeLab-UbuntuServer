@@ -12,3 +12,5 @@ Puntos clave del laboratorio:
 * 🔹 **Persistencia de datos:** Mapeo de carpetas locales (`./datos/config` y `./datos/peliculas`) hacia las rutas del contenedor (`/config` y `/data/movies`) para que los cambios queden guardados en el disco local.
 * 🔹 **Seguridad y permisos:** Asignación de un usuario sin privilegios de root (`user: "1000:1000"`) para evitar problemas de seguridad y gestionar los permisos del sistema de archivos correctamente, junto al mapeo de puertos (`8096:8096`).
 * 🔹 **Verificación:** Comprobación del estado del contenedor desde la terminal con `docker ps`, verificando que el servicio está activo (`healthy`) y comprobando las rutas desde el panel de administración.
+
+Las imagenes demostrantes se encuentran en 
