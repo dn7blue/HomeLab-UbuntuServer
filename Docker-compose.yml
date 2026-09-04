@@ -1,0 +1,13 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    user: "1000:1000"
+    restart: unless-stopped
+    ports:
+      - 8096:8096
+    volumes:
+      - ./datos/config:/config
+      - ./datos/peliculas:/data/movies
+    environment:
+      - TZ=Europe/Madrid
